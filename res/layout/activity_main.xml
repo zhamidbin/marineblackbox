@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bd.ac.bracu.marineblackbox.MainActivity" 
+    android:background="@drawable/image5">
+    
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="196dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="MARINE STATUS"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roundbackground"
+        android:text="PASSENGERS"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+         />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/roundedbackground2"
+        android:text="WEATHER"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+         />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circular_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="HELP"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text4"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/roundbackground"
+        android:text="LOCATION"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

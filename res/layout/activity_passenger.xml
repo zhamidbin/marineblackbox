@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PassengerActivity"
+    android:orientation="vertical"
+    android:background="#ccccff">
+    
+    <LinearLayout
+        android:id="@+id/l77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/passenger_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/my_toolbar"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/passenger2" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progressBarToday2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/count_label"        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/l1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:textColor="#0000ff" 
+        android:textSize="100sp"/>
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="196dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/progressBarToday2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="PASSENGERS ON BOARD"
+        android:textColor="#4c0000"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/limit"
+        android:layout_width="196dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="MAXIMUM CAPACITY : 200"
+        android:textColor="#ffffff"
+        android:fontFamily="arial"
+        android:textSize="24sp"
+        android:background="#8c198c"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBarToday2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="183dp"
+        android:layout_height="295dp"
+        android:layout_above="@+id/limit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_weight="1"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="90"
+        android:progressDrawable="@drawable/circular_progressbar2" />
+
+</RelativeLayout>
